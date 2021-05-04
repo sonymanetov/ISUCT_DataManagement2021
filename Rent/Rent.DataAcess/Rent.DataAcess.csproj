@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientDAO.cs~RF7e1f2b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\5.0.5\System.Configuration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

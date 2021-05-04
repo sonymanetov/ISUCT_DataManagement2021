@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using Rent.DataAcess.Entities;
 
+
+
 namespace Rent.DataAcess.Entities
 {
-    interface ClientDAO
+   public interface IClientDAO
     {
         Client get(int ID);
         void add(Client client);

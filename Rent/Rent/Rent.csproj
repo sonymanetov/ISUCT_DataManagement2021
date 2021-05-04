@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rent.DataAcess\Rent.DataAcess.csproj" />
+    <ProjectReference Include="..\RentBusinessLayer\RentBusinessLayer.csproj" />
+    <ProjectReference Include="..\Rent_Dto\Rent_Dto.csproj" />
+  </ItemGroup>
+
+</Project>
