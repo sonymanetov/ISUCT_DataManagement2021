@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Rent.DataAcess.Entities;
+
+namespace Rent.DataAcess.Entities
+{
+    interface ClientDAO
+    {
+        Client get(int ID);
+        void add(Client client);
+        void update(Client client);
+        void delete(int ID);
+
+        IList<Client> getList();
+    }
+}
