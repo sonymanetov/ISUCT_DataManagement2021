@@ -7,7 +7,7 @@ using Rent.DataAcess.Entities;
 
 namespace RentBusinessLayer
 {
-    public class ClientProcess
+    public class ClientProcess : IClientProsess
     {
         private readonly IClientDAO clientDao;
         public ClientProcess()
@@ -15,25 +15,25 @@ namespace RentBusinessLayer
             clientDao = DAOFactory.getclientdao();
         }
 
-        ClientDto get(int ID)
+      public  ClientDto get(int ID)
         {
             return DtoConverter.Convert(clientDao.get(ID));
         }
-        void add(ClientDto client)
+      public  void add(ClientDto client)
         {
             clientDao.add(DtoConverter.Convert(client));
         }
     
-        void update(ClientDto client)
+        public void update(ClientDto client)
         {
             clientDao.update(DtoConverter.Convert(client));
         }
-        void delete(int ID)
+        public void delete(int ID)
         {
             clientDao.delete(ID);
         }
 
-        IList<ClientDto> getList()
+        public IList<ClientDto> getList()
         {
            return DtoConverter.Convert(clientDao.getList());
         }
