@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rent.DataAcess\Rent.DataAcess.csproj" />
-    <ProjectReference Include="..\RentBusinessLayer\RentBusinessLayer.csproj" />
-    <ProjectReference Include="..\Rent_Dto\Rent_Dto.csproj" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>

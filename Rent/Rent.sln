@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rent_Dto", "Rent_Dto\Rent_Dto.csproj", "{1F1ADFB8-75A9-4F86-AF73-565D2E49B88A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rent_Dto", "Rent_Dto\Rent_Dto.csproj", "{1F1ADFB8-75A9-4F86-AF73-565D2E49B88A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBusinessLayer", "RentBusinessLayer\RentBusinessLayer.csproj", "{F508AE91-FF9A-44B5-B79D-12485D3D64EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentBusinessLayer", "RentBusinessLayer\RentBusinessLayer.csproj", "{F508AE91-FF9A-44B5-B79D-12485D3D64EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rent.DataAcess", "Rent.DataAcess\Rent.DataAcess.csproj", "{A2B351FC-2E6B-4B41-934B-957BF96A5299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rent.DataAcess", "Rent.DataAcess\Rent.DataAcess.csproj", "{A2B351FC-2E6B-4B41-934B-957BF96A5299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rent", "Rent\Rent.csproj", "{8ABC5128-0FE6-4049-9FD9-E28C408D4360}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rent", "Rent\Rent.csproj", "{0E81BB96-2FFE-4A94-96D8-7456FA432719}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{A2B351FC-2E6B-4B41-934B-957BF96A5299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B351FC-2E6B-4B41-934B-957BF96A5299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2B351FC-2E6B-4B41-934B-957BF96A5299}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8ABC5128-0FE6-4049-9FD9-E28C408D4360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8ABC5128-0FE6-4049-9FD9-E28C408D4360}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8ABC5128-0FE6-4049-9FD9-E28C408D4360}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8ABC5128-0FE6-4049-9FD9-E28C408D4360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E81BB96-2FFE-4A94-96D8-7456FA432719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E81BB96-2FFE-4A94-96D8-7456FA432719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E81BB96-2FFE-4A94-96D8-7456FA432719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E81BB96-2FFE-4A94-96D8-7456FA432719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

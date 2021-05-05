@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace Rent
 {
@@ -22,6 +23,7 @@ namespace Rent
     {
         public MainWindow()
         {
+           var b =  new SqlConnection(); 
             InitializeComponent();
         }
     }
