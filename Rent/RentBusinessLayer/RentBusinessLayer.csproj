@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Rent.DataAcess\Rent.DataAcess.csproj" />
     <ProjectReference Include="..\Rent_Dto\Rent_Dto.csproj" />
   </ItemGroup>
 

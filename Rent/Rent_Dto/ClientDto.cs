@@ -4,7 +4,7 @@ namespace Rent_Dto
 {
     public class ClientDto
     {
-        public int ID { get; set; }
+        public int ClientID { get; set; }
         public string Name { get; set; }
         public string BankDetails { get; set; }
         public string Adress { get; set; }

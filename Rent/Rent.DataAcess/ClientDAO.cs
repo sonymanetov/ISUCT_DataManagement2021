@@ -20,7 +20,7 @@ namespace Rent.DataAcess
         private static Client CreateClient(SqlDataReader reader)
         {
             Client client = new Client();
-            client.ID = reader.GetInt32(reader.GetOrdinal("ClientID"));
+            client.ClientID = reader.GetInt32(reader.GetOrdinal("ClientID"));
             client.Name = reader.GetString(reader.GetOrdinal("Name"));
             client.BankDetails = reader.GetString(reader.GetOrdinal("BankDetails"));
             client.Adress = reader.GetString(reader.GetOrdinal("Adress"));
