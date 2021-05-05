@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Rent"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,0,-6" Background="#FF252424">
+        <Button x:Name="btclients" Content="КЛИЕНТЫ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="129" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White" FontWeight="Normal" Click="btclients_Click"/>
 
     </Grid>
 </Window>
