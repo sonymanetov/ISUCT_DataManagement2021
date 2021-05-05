@@ -7,7 +7,7 @@ namespace Rent.DataAcess.Entities
 {
     public class Client
     {
-        public int ID;
+        public int ClientID;
         public string Name;
         public string BankDetails;
         public string Adress;

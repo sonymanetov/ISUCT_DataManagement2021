@@ -9,6 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System.Configuration">
       <HintPath>C:\Program Files (x86)\dotnet\shared\Microsoft.NETCore.App\5.0.5\System.Configuration.dll</HintPath>
     </Reference>

@@ -23,7 +23,7 @@ namespace Rent
     {
         public MainWindow()
         {
-           var b =  new SqlConnection(); 
+           //var b =  new SqlConnection(); 
             InitializeComponent();
         }
     }
