@@ -32,5 +32,11 @@ namespace Rent
             ClientWind wnd = new ClientWind();
             wnd.ShowDialog();
         }
+
+        //exit
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

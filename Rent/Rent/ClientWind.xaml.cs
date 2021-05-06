@@ -24,7 +24,26 @@ namespace Rent
             dataGridClient.ItemsSource = ProcessFactory.GetClientProsess().getList();
         }
 
-        private void btclients_Click(object sender, RoutedEventArgs e)
+ 
+        private void BTADD_Click_1(object sender, RoutedEventArgs e)
+        {
+            AddClient wnd = new AddClient();
+            wnd.ShowDialog();
+        }
+
+        private void BTUPD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //удалить
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //закрыть
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
         }

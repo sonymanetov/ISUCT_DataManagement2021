@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rent"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,0,0,-6" Background="#FF252424">
-        <Button x:Name="btclients" Content="КЛИЕНТЫ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="129" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White" FontWeight="Normal" Click="btclients_Click"/>
+        Title="MainWindow" Height="445" Width="848" Background="#FF252424">
+    <Grid Margin="0,0,0,13" Background="#FF252424">
+        <Button x:Name="btclients" Content="КЛИЕНТЫ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="129" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White" FontWeight="Normal" Click="btclients_Click" BorderBrush="White"/>
+        <Button x:Name="btexit" Content="ВЫХОД" HorizontalAlignment="Left" Margin="729,0,0,0" VerticalAlignment="Top" Height="32" Width="119" BorderBrush="White" Foreground="White" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
 
     </Grid>
 </Window>
