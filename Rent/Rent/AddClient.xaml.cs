@@ -19,9 +19,25 @@ namespace Rent
     /// </summary>
     public partial class AddClient : Window
     {
-        public AddClient()
+        private ClientDto clientdto;
+
+        private void LoadClient()
         {
+            if (clientdto == null)
+            {
+                return;
+            }
+            nametb.Text = clientdto.Name;
+            banktb.Text = clientdto.BankDetails;
+            adresstb.Text = clientdto.Adress;
+            phonetb.Text = clientdto.Phone;
+            agenttb.Text = clientdto.AgentName;
+        }
+        public AddClient(ClientDto client = null)
+        {
+            clientdto = client;
             InitializeComponent();
+            LoadClient();
         }
 
         private void btclients_Click(object sender, RoutedEventArgs e)
@@ -56,16 +72,32 @@ namespace Rent
                 MessageBox.Show("ФИО агента не указаны ୧((#Φ益Φ#))୨", "Фатальная ошибка");
                 return;
             }
-            ClientDto clientdto = new ClientDto();
-            clientdto.Name = nametb.Text;
-            clientdto.BankDetails = banktb.Text;
-            clientdto.Adress = adresstb.Text;
-            clientdto.Phone = phonetb.Text;
-            clientdto.AgentName = agenttb.Text;
 
-            IClientProsess clientProsess = ProcessFactory.GetClientProsess();
-            clientProsess.add(clientdto);
-            MessageBox.Show("Клиент добавлен °˖✧◝(⁰▿⁰)◜✧˖° ", "Всё получилось!");
+            if (clientdto == null)
+            {
+                ClientDto clientdto = new ClientDto();
+                clientdto.Name = nametb.Text;
+                clientdto.BankDetails = banktb.Text;
+                clientdto.Adress = adresstb.Text;
+                clientdto.Phone = phonetb.Text;
+                clientdto.AgentName = agenttb.Text;
+
+                IClientProsess clientProsess = ProcessFactory.GetClientProsess();
+                clientProsess.add(clientdto);
+                MessageBox.Show("Клиент добавлен °˖✧◝(⁰▿⁰)◜✧˖° ", "Всё получилось!");
+            }
+            else
+            {
+                clientdto.Name = nametb.Text;
+                clientdto.BankDetails = banktb.Text;
+                clientdto.Adress = adresstb.Text;
+                clientdto.Phone = phonetb.Text;
+                clientdto.AgentName = agenttb.Text;
+
+                IClientProsess clientProsess = ProcessFactory.GetClientProsess();
+                clientProsess.update(clientdto);
+                MessageBox.Show("Данные изменены °˖✧◝(⁰▿⁰)◜✧˖° ", "Всё получилось!");
+            }
         }
     }
 }

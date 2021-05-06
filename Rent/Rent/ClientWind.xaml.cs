@@ -41,15 +41,25 @@ namespace Rent
         private void BTUPD_Click(object sender, RoutedEventArgs e)
         {
 
+            ClientDto item = dataGridClient.SelectedItem as ClientDto;
+            if (item == null)
+            {
+                MessageBox.Show("Ничего не было выбрано для изменения ╮(￣ω￣)╭ ", "Какой коwмар!");
+                return;
+            }
+
+            AddClient wnd = new AddClient(item);
+            wnd.ShowDialog();
+            UpdateWND();
         }
 
         //удалить
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btdel(object sender, RoutedEventArgs e)
         {
             ClientDto item = dataGridClient.SelectedItem as ClientDto;
             if (item == null)
             {
-                MessageBox.Show("Чел, ты ничего не выбрал ╮(￣ω￣)╭ ", "Какой коwмар!");
+                MessageBox.Show("Ничего не было выбрано для удаления ╮(￣ω￣)╭ ", "Какой коwмар!");
                 return;
             }
 
@@ -65,7 +75,7 @@ namespace Rent
         }
 
         //закрыть
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btclose(object sender, RoutedEventArgs e)
         {
             Close();
         }

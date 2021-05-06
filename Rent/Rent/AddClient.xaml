@@ -17,7 +17,7 @@
         <Label Content="Номер телефона" HorizontalAlignment="Left" Margin="143,278,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
         <Label Content="ФИО агента" HorizontalAlignment="Left" Margin="197,345,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
         <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="479" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Margin="190,0,0,0"/>
-        <Button x:Name="savebt" Content="ДОБАВИТЬ КЛИЕНТА" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="190" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="savebt_Click"/>
+        <Button x:Name="savebt" Content="СОХРАНИТЬ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="206" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="savebt_Click"/>
         <TextBox x:Name="adresstb" HorizontalAlignment="Left" Margin="370,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="36" FontFamily="Century Gothic" FontSize="20" Background="#FFAEA9A9"/>
         <TextBox x:Name="banktb" HorizontalAlignment="Left" Margin="370,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="35" FontFamily="Century Gothic" FontSize="20" Background="#FFAEA9A9"/>
         <TextBox x:Name="nametb" HorizontalAlignment="Left" Margin="370,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="35" FontFamily="Century Gothic" FontSize="20" Background="#FFAEA9A9"/>
