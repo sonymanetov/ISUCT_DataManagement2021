@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using RentBusinessLayer;
+using Rent_Dto;
 
 namespace Rent
 {
@@ -21,6 +22,11 @@ namespace Rent
         public ClientWind()
         {
             InitializeComponent();
+            UpdateWND();
+        }
+
+        private void UpdateWND()
+        {
             dataGridClient.ItemsSource = ProcessFactory.GetClientProsess().getList();
         }
 
@@ -29,6 +35,7 @@ namespace Rent
         {
             AddClient wnd = new AddClient();
             wnd.ShowDialog();
+            UpdateWND();
         }
 
         private void BTUPD_Click(object sender, RoutedEventArgs e)
@@ -39,7 +46,22 @@ namespace Rent
         //удалить
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            ClientDto item = dataGridClient.SelectedItem as ClientDto;
+            if (item == null)
+            {
+                MessageBox.Show("Чел, ты ничего не выбрал ╮(￣ω￣)╭ ", "Какой коwмар!");
+                return;
+            }
 
+            MessageBoxResult result = MessageBox.Show("Сейчас произойдет удаление клиента " + item.Name + " (×_×)", "!!!!", MessageBoxButton.YesNo);
+
+            if (result != MessageBoxResult.Yes)
+            {
+                return;
+            }
+            IClientProsess clientProsess = ProcessFactory.GetClientProsess();
+            clientProsess.delete(item.ClientID);
+            UpdateWND();
         }
 
         //закрыть
