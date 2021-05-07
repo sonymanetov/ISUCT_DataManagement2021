@@ -25,6 +25,8 @@ namespace Rent
         {
            //var b =  new SqlConnection(); 
             InitializeComponent();
+           
+            datetext.Text = DateTime.Now.ToShortDateString();
         }
 
         private void btclients_Click(object sender, RoutedEventArgs e)
@@ -44,5 +46,6 @@ namespace Rent
             RoomWind wnd = new RoomWind();
             wnd.ShowDialog();
         }
+       
     }
 }
