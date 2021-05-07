@@ -4,7 +4,6 @@ using System.Text;
 using Rent.DataAcess.Entities;
 
 
-
 namespace Rent.DataAcess.Entities
 {
    public interface IClientDAO

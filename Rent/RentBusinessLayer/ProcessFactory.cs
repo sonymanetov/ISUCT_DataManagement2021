@@ -10,5 +10,10 @@ namespace RentBusinessLayer
         {
             return new ClientProcess();
         }
+
+        public static IRoomProcess GetRoomProcess()
+        {
+            return new RoomProcess(); 
+        }
     }
 }

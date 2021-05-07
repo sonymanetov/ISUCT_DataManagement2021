@@ -9,8 +9,8 @@ namespace RentBusinessLayer
     {
         ClientDto get(int ID);
         void add(ClientDto client);
-         void update(ClientDto client);
-         public void delete(int ID);
+        void update(ClientDto client);
+        void delete(int ID);
 
         IList<ClientDto> getList();
 

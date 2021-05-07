@@ -38,5 +38,11 @@ namespace Rent
         {
             Close();
         }
+
+        private void btroom_Click(object sender, RoutedEventArgs e)
+        {
+            RoomWind wnd = new RoomWind();
+            wnd.ShowDialog();
+        }
     }
 }

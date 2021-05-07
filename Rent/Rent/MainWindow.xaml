@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="445" Width="848" Background="#FF252424">
     <Grid Margin="0,0,0,13" Background="#FF252424">
-        <Button x:Name="btclients" Content="КЛИЕНТЫ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="129" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White" FontWeight="Normal" Click="btclients_Click" BorderBrush="White"/>
+        <Button x:Name="btclients" Content="КЛИЕНТЫ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="129" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White" FontWeight="Normal" Click="btclients_Click" BorderBrush="#FF7E1EA6"/>
         <Button x:Name="btexit" Content="ВЫХОД" HorizontalAlignment="Left" Margin="729,0,0,0" VerticalAlignment="Top" Height="32" Width="119" BorderBrush="White" Foreground="White" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
+        <Button x:Name="btroom" Content="ПОМЕЩЕНИЯ" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Height="32" Width="131" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btroom_Click"/>
 
     </Grid>
 </Window>

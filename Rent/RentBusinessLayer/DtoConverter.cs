@@ -53,5 +53,49 @@ namespace RentBusinessLayer
             }
             return clientDto;
         }
+
+        public static Room Convert(RoomDto roomDto)
+        {
+            if (roomDto == null)
+            {
+                return null;
+            }
+            Room room = new Room();
+            room.RoomID = roomDto.RoomID;
+            room.Floor = roomDto.Floor;
+            room.Area = roomDto.Area;
+            room.Conditioner = roomDto.Conditioner;
+            room.RentCostPerDay = roomDto.RentCostPerDay;
+            return room;
+        }
+
+        public static RoomDto Convert(Room room)
+        {
+            if (room == null)
+            {
+                return null;
+            }
+            RoomDto roomDto = new RoomDto();
+            roomDto.RoomID = room.RoomID;
+            roomDto.Floor = room.Floor;
+            roomDto.Area = room.Area;
+            roomDto.Conditioner = room.Conditioner;
+            roomDto.RentCostPerDay = room.RentCostPerDay;
+            return roomDto;
+        }
+
+        public static IList<RoomDto> Convert(IList<Room> room)
+        {
+            if (room == null)
+            {
+                return null;
+            }
+            IList<RoomDto> roomDto = new List<RoomDto>();
+            foreach (var item in room)
+            {
+                roomDto.Add(Convert(item));
+            }
+            return roomDto;
+        }
     }
 }
