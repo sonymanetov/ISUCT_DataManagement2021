@@ -67,5 +67,19 @@ namespace Rent
             wnd.ShowDialog();
             UpdateWND();
         }
+
+        private void btupdroom_Click(object sender, RoutedEventArgs e)
+        {
+            RoomDto item = dataGridRoom.SelectedItem as RoomDto;
+            if (item == null)
+            {
+                MessageBox.Show("Ничего не было выбрано для изменения ╮(￣ω￣)╭ ", "Какой коwмар!");
+                return;
+            }
+
+            AddRoom wnd = new AddRoom(item);
+            wnd.ShowDialog();
+            UpdateWND();
+        }
     }
 }
