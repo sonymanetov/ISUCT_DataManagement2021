@@ -15,5 +15,9 @@ namespace Rent.DataAcess
         {
             return new RoomDAO();
         }
+        public static IAgreementDAO getagreementdao()
+        {
+            return new AgreementDAO();
+        }
     }
 }
