@@ -61,11 +61,11 @@ namespace Rent.DataAcess
 
                 using (var cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "Insert into [RentPremise] ([Floor], [Area], [Conditioner], [RentCostPerDay]) values (@Floor, @Area, @Conditioner, @RentCostPerDay)";
+                    cmd.CommandText = "Insert into [RentPremise] ([Floor], [Area], [Сonditioner], [RentCostPerDay]) values (@Floor, @Area, @Сonditioner, @RentCostPerDay)";
 
                     cmd.Parameters.AddWithValue("@Floor", room.Floor);
                     cmd.Parameters.AddWithValue("@Area", room.Area);
-                    cmd.Parameters.AddWithValue("@Conditioner", room.Conditioner);
+                    cmd.Parameters.AddWithValue("@Сonditioner", room.Conditioner);
                     cmd.Parameters.AddWithValue("@RentCostPerDay", room.RentCostPerDay);
                  
                     cmd.ExecuteNonQuery();
