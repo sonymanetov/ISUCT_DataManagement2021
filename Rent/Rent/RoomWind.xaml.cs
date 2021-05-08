@@ -54,13 +54,6 @@ namespace Rent
             Close();
         }
 
-        private void btaddroom_Click(object sender, RoutedEventArgs e)
-        {
-            AddRoom wnd = new AddRoom();
-            wnd.ShowDialog();
-            UpdateWND();
-        }
-
         private void addroombt_Click(object sender, RoutedEventArgs e)
         {
             AddRoom wnd = new AddRoom();

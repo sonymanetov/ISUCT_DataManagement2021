@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="PaymentWind" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="dataGridPayment"/>
+        <DataGrid x:Name="dataGridPayment" Margin="0,31,0,0"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="523,0,0,0" VerticalAlignment="Top" Height="31" Width="126" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6"/>
+        <Button x:Name="btadd" Content="ДОБАВИТЬ ПЛАТЕЖ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="187" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btadd_Click"/>
+        <Button x:Name="btupd" Content="ИЗМЕНИТЬ ДАННЫЕ" HorizontalAlignment="Left" Margin="187,0,0,0" VerticalAlignment="Top" Height="31" Width="173" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btupd_Click"/>
+        <Button x:Name="btdel" Content="УДАЛИТЬ ПЛАТЁЖ" HorizontalAlignment="Left" Margin="360,0,0,0" VerticalAlignment="Top" Height="31" Width="163" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btdel_Click"/>
+        <Button x:Name="btcls" Content="НАЗАД" HorizontalAlignment="Left" Margin="649,0,0,0" VerticalAlignment="Top" Height="31" Width="151" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btcls_Click"/>
 
     </Grid>
 </Window>

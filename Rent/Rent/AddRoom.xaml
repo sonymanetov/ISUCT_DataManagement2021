@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Rent"
         mc:Ignorable="d"
         Title="AddRoom" Height="450" Width="800">
-    <Grid Background="#FF1C1C1C">
+    <Grid Background="#FF252526">
         <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="448" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Margin="221,0,0,0"/>
         <Button x:Name="savebt" Content="СОХРАНИТЬ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="221" Foreground="White" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
         <Button x:Name="btclose" Content="НАЗАД" HorizontalAlignment="Left" Margin="669,0,0,0" VerticalAlignment="Top" Height="31" Width="131" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontSize="16" FontFamily="Century Gothic" Click="btclose_Click"/>
