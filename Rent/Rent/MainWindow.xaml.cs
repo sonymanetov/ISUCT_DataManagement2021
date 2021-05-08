@@ -52,5 +52,11 @@ namespace Rent
             AgreementWind wnd = new AgreementWind();
             wnd.ShowDialog();
         }
+
+        private void btpay_Click(object sender, RoutedEventArgs e)
+        {
+            PaymentWind wnd = new PaymentWind();
+            wnd.ShowDialog();
+        }
     }
 }
