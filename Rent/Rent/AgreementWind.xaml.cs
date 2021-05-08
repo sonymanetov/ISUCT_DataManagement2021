@@ -28,5 +28,10 @@ namespace Rent
         {
             dataGridAgreement.ItemsSource = ProcessFactory.GetAgreementProcess().getList();
         }
+
+        private void btclose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
