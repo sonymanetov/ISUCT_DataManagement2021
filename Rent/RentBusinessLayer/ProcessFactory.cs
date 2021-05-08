@@ -19,5 +19,9 @@ namespace RentBusinessLayer
         {
             return new AgreementProcess();
         }
+        public static IPaymentProcess GetPaymentProcess()
+        {
+            return new PaymentProcess();
+        }
     }
 }
