@@ -33,5 +33,46 @@ namespace Rent
         {
             Close();
         }
+
+        private void btaddag_Click(object sender, RoutedEventArgs e)
+        {
+            AddAgreement wnd = new AddAgreement();
+            wnd.ShowDialog();
+            UpdateWND();
+        }
+
+        private void btupdag_Click(object sender, RoutedEventArgs e)
+        {
+            AgreementDto item = dataGridAgreement.SelectedItem as AgreementDto;
+            if (item == null)
+            {
+                MessageBox.Show("Ничего не было выбрано для изменения ╮(￣ω￣)╭ ", "Какой коwмар!");
+                return;
+            }
+
+            AddAgreement wnd = new AddAgreement(item);
+            wnd.ShowDialog();
+            UpdateWND();
+        }
+
+        private void btdelag_Click(object sender, RoutedEventArgs e)
+        {
+            AgreementDto item = dataGridAgreement.SelectedItem as AgreementDto;
+            if (item == null)
+            {
+                MessageBox.Show("Ничего не было выбрано для удаления ╮(￣ω￣)╭ ", "Какой коwмар!");
+                return;
+            }
+
+            MessageBoxResult result = MessageBox.Show("Сейчас произойдет удаление помещения " + item.RentID + " (×_×)", "!!!!", MessageBoxButton.YesNo);
+
+            if (result != MessageBoxResult.Yes)
+            {
+                return;
+            }
+            IAgreementProcess agreementProcess = ProcessFactory.GetAgreementProcess();
+            agreementProcess.Delete(item.RentID);
+            UpdateWND();
+        }
     }
 }
