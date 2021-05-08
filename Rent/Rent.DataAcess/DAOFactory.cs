@@ -19,5 +19,9 @@ namespace Rent.DataAcess
         {
             return new AgreementDAO();
         }
+        public static IPaymentDAO getpaymentdao()
+        {
+            return new PaymentDAO();
+        }
     }
 }

@@ -145,5 +145,53 @@ namespace RentBusinessLayer
             }
             return agreementDto;
         }
+
+        public static Payment Convert(PaymentDto paymentDto)
+        {
+            if (paymentDto == null)
+            {
+                return null;
+            }
+            Payment payment = new Payment();
+            payment.PayID = paymentDto.PayID;
+            payment.RentID = paymentDto.RentID;
+            payment.Date = paymentDto.Date;
+            payment.Month = paymentDto.Month;
+            payment.Sum = paymentDto.Sum;
+            payment.Ontime = paymentDto.Ontime;
+
+            return payment;
+        }
+
+        public static PaymentDto Convert(Payment payment)
+        {
+            if (payment == null)
+            {
+                return null;
+            }
+            PaymentDto paymentDto = new PaymentDto();
+            paymentDto.PayID = payment.PayID;
+            paymentDto.RentID = payment.RentID;
+            paymentDto.Date = payment.Date;
+            paymentDto.Month = payment.Month;
+            paymentDto.Sum = payment.Sum;
+            paymentDto.Ontime = payment.Ontime;
+
+            return paymentDto;
+        }
+
+        public static IList<PaymentDto> Convert(IList<Payment> payment)
+        {
+            if (payment == null)
+            {
+                return null;
+            }
+            IList<PaymentDto> paymentDto = new List<PaymentDto>();
+            foreach (var item in payment)
+            {
+                paymentDto.Add(Convert(item));
+            }
+            return paymentDto;
+        }
     }
 }
