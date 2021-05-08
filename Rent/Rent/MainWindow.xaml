@@ -14,7 +14,7 @@
         <TextBlock x:Name="datetext" HorizontalAlignment="Right" Margin="0,30,64,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Text="aaa" FontFamily="Century Gothic" FontSize="18"/>
         <Label Content="Сегодняшняя дата:" HorizontalAlignment="Right" Margin="0,23,170,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontFamily="Century Gothic"/>
         <Label Content="&quot;Все виды экономии в обществе сводятся в конечном &#xD;&#xA;счете к экономии времени&quot;&#xD;&#xA;&#xD;&#xA;                                                                      Карл Маркс" HorizontalAlignment="Right" Margin="0,0,0,29" VerticalAlignment="Bottom" Foreground="White" FontFamily="Century Gothic" FontSize="16"/>
-        <Button x:Name="btagreement" Content="СПИСОК ДОГОВОРОВ" HorizontalAlignment="Left" Margin="0,118,0,0" VerticalAlignment="Top" Height="67" Width="232" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontSize="16" FontFamily="Century Gothic"/>
+        <Button x:Name="btagreement" Content="СПИСОК ДОГОВОРОВ" HorizontalAlignment="Left" Margin="0,118,0,0" VerticalAlignment="Top" Height="67" Width="232" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontSize="16" FontFamily="Century Gothic" Click="btagreement_Click"/>
         <Button x:Name="btpay" Content="ПЛАТЕЖИ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="62" Width="232" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" Margin="0,185,0,0" FontFamily="Century Gothic" FontSize="16"/>
 
     </Grid>

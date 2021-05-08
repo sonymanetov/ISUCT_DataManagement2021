@@ -97,5 +97,53 @@ namespace RentBusinessLayer
             }
             return roomDto;
         }
+
+        public static Agreement Convert(AgreementDto agreementDto)
+        {
+            if (agreementDto == null)
+            {
+                return null;
+            }
+            Agreement agreement = new Agreement();
+            agreement.RentID = agreementDto.RentID;
+            agreement.ClientID = agreementDto.ClientID;
+            agreement.RoomID = agreementDto.RoomID;
+            agreement.Start = agreementDto.Start;
+            agreement.Finish = agreementDto.Finish;
+            agreement.Payday = agreementDto.Payday;
+
+            return agreement;
+        }
+
+        public static AgreementDto Convert(Agreement agreement)
+        {
+            if (agreement == null)
+            {
+                return null;
+            }
+            AgreementDto agreementDto = new AgreementDto();
+            agreementDto.RentID = agreement.RentID;
+            agreementDto.ClientID = agreement.ClientID;
+            agreementDto.RoomID = agreement.RoomID;
+            agreementDto.Start = agreement.Start;
+            agreementDto.Finish = agreement.Finish;
+            agreementDto.Payday = agreement.Payday;
+
+            return agreementDto;
+        }
+
+        public static IList<AgreementDto> Convert(IList<Agreement> agreement)
+        {
+            if (agreement == null)
+            {
+                return null;
+            }
+            IList<AgreementDto> agreementDto = new List<AgreementDto>();
+            foreach (var item in agreement)
+            {
+                agreementDto.Add(Convert(item));
+            }
+            return agreementDto;
+        }
     }
 }

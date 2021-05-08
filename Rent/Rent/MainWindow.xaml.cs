@@ -46,6 +46,11 @@ namespace Rent
             RoomWind wnd = new RoomWind();
             wnd.ShowDialog();
         }
-       
+
+        private void btagreement_Click(object sender, RoutedEventArgs e)
+        {
+            AgreementWind wnd = new AgreementWind();
+            wnd.ShowDialog();
+        }
     }
 }

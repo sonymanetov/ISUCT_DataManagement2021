@@ -23,7 +23,7 @@ namespace Rent.DataAcess
             room.RoomID = reader.GetInt32(reader.GetOrdinal("RoomID"));
             room.Floor = reader.GetDecimal(reader.GetOrdinal("Floor"));
             room.Area = reader.GetDecimal(reader.GetOrdinal("Area"));
-            room.Conditioner = reader.GetBoolean(reader.GetOrdinal("Сonditioner"));
+            room.Conditioner = reader.GetBoolean(reader.GetOrdinal("Conditioner"));
             room.RentCostPerDay = reader.GetDecimal(reader.GetOrdinal("RentCostPerDay"));
             
             return room;
@@ -116,7 +116,7 @@ namespace Rent.DataAcess
 
                 using (var cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "Select [RoomID], [Floor], [Area], [Сonditioner], [RentCostPerDay] From [RentPremise]";
+                    cmd.CommandText = "Select [RoomID], [Floor], [Area], [Conditioner], [RentCostPerDay] From [RentPremise]";
           
                     using (var dataReader = cmd.ExecuteReader())
                     {
