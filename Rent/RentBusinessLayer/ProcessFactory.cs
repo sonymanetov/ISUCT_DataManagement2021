@@ -23,5 +23,9 @@ namespace RentBusinessLayer
         {
             return new PaymentProcess();
         }
+        public static IHPProcess GetHPProcess()
+        {
+            return new HPProcess();
+        }
     }
 }

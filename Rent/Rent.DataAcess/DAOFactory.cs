@@ -23,5 +23,10 @@ namespace Rent.DataAcess
         {
             return new PaymentDAO();
         }
+        public static IHPDAO gethpdao()
+        {
+            return new HPDAO();
+        }
+
     }
 }

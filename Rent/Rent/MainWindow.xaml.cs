@@ -58,5 +58,11 @@ namespace Rent
             PaymentWind wnd = new PaymentWind();
             wnd.ShowDialog();
         }
+
+        private void btproc_Click(object sender, RoutedEventArgs e)
+        {
+            StoredProc wnd = new StoredProc();
+            wnd.ShowDialog();
+        }
     }
 }

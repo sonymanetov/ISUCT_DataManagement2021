@@ -4,6 +4,7 @@ using System.Text;
 using System.Configuration;
 using System.Data.SqlClient;
 using Rent.DataAcess.Entities;
+using System.Data;
 
 namespace Rent.DataAcess
 {
@@ -134,5 +135,6 @@ namespace Rent.DataAcess
 
             return agreement;
         }
+        }
     }
-}
+

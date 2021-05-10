@@ -193,5 +193,42 @@ namespace RentBusinessLayer
             }
             return paymentDto;
         }
+        public static HP Convert(HPDto hpDto)
+        {
+            if (hpDto == null)
+            {
+                return null;
+            }
+            HP hp = new HP();
+            hp.finish = hpDto.Finish;
+     
+            return hp;
+        }
+
+        public static HPDto Convert(HP hp)
+        {
+            if (hp == null)
+            {
+                return null;
+            }
+            HPDto hpDto = new HPDto();
+            hpDto.Finish = hp.finish;
+
+            return hpDto;
+        }
+
+        public static IList<HPDto> Convert(IList<HP> hp)
+        {
+            if (hp == null)
+            {
+                return null;
+            }
+            IList<HPDto> hpDto = new List<HPDto>();
+            foreach (var item in hp)
+            {
+                hpDto.Add(Convert(item));
+            }
+            return hpDto;
+        }
     }
 }
