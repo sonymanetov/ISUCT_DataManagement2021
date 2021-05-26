@@ -133,5 +133,30 @@ namespace Rent.DataAcess
 
             return client;
         }
+
+        public IList<Client> SearchClient(string Name, string Bank, string Agent)
+        {
+            IList<Client> clients = new List<Client>();
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = "SELECT ClientID, Name, BankDetails, Phone, Adress, AgentName FROM Client WHERE Name like @Name AND BankDetails like @Bank AND AgentName like @Agent";
+                    cmd.Parameters.AddWithValue("@Name","%"+Name +"%");
+                    cmd.Parameters.AddWithValue("@Bank", "%" + Bank + "%");
+                    cmd.Parameters.AddWithValue("@Agent", "%" + Agent + "%");
+                    using (var dataReader = cmd.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            clients.Add(CreateClient(dataReader));
+                        }
+                    }
+                }
+            }
+            return clients;
+        }
+
     }
 }

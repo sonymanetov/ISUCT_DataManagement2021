@@ -13,6 +13,7 @@ namespace RentBusinessLayer
         void delete(int ID);
 
         IList<ClientDto> getList();
+        IList<ClientDto> SearchClient(string Name, string Bank, string Agent);
 
     }
 }

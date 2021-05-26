@@ -1,0 +1,35 @@
+﻿<Window x:Class="Rent.SearchWind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rent"
+        mc:Ignorable="d"
+        Title="SearchWind" Height="450" Width="800">
+    <Grid Background="#FF1A1A1A">
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="458" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Margin="211,0,0,0"/>
+        <Button Content="НАЗАД" HorizontalAlignment="Left" Margin="669,0,0,0" VerticalAlignment="Top" Height="31" Width="131" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="211" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6"/>
+        <TabControl x:Name="SC" Margin="0,31,0,0">
+            <TabItem x:Name="Client" Header="Клиент" Background="White" BorderBrush="#FFACACAC" FontSize="16" FontFamily="Century Gothic" Foreground="Black">
+                <Grid Background="#FF252526">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="ClientName" HorizontalAlignment="Left" Margin="377,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="31" Background="White" FontSize="16"/>
+                    <Label Content="Поиск по названию" HorizontalAlignment="Left" Margin="121,55,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22"/>
+                    <Label Content="Поиск по номеру счета&#xD;&#xA;" HorizontalAlignment="Left" Margin="72,132,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22"/>
+                    <Label Content="Поиск по агенту" HorizontalAlignment="Left" Margin="158,214,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22"/>
+                    <TextBox x:Name="tbbank" HorizontalAlignment="Left" Margin="377,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="32"/>
+                    <TextBox x:Name="tbagent" HorizontalAlignment="Left" Margin="377,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="31"/>
+                    <Button x:Name="sclient" Content="Поиск" HorizontalAlignment="Left" Margin="492,296,0,0" VerticalAlignment="Top" Width="91" Height="34" Background="#FF7E1EA6" Foreground="White" BorderBrush="#FF7E1EA6" Click="sclient_Click"/>
+                    <Button x:Name="cancbt" Content="Отмена" HorizontalAlignment="Left" Margin="620,296,0,0" VerticalAlignment="Top" Height="34" Width="97" Background="#FF7E1EA6" Foreground="White" BorderBrush="#FF7E1EA6"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Room" Header="Помещение" Foreground="Black" BorderBrush="#FFACACAC" FontSize="16" FontFamily="Century Gothic">
+                <Grid Background="#FFE5E5E5" Height="395"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

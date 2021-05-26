@@ -21,7 +21,6 @@ namespace Rent
     {
         private AgreementDto agreementdto;
 
-        private static readonly string[] cl = { "aaa", "baa", "aba" }; 
         private void LoadAgreement()
         {
             if (agreementdto == null)
@@ -39,8 +38,6 @@ namespace Rent
             agreementdto = agreement;
             InitializeComponent();
             LoadAgreement();
-            cbclient.ItemsSource = cl;
-            cbclient.SelectedIndex = 0;
         } 
 
         private void btsave_Click(object sender, RoutedEventArgs e)

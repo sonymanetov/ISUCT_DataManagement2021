@@ -37,5 +37,9 @@ namespace RentBusinessLayer
         {
            return DtoConverter.Convert(clientDao.getList());
         }
+        public IList<ClientDto> SearchClient(string Name, string Bank, string Agent)
+        {
+            return DtoConverter.Convert(clientDao.SearchClient(Name, Bank, Agent));
+        }
     }
 }

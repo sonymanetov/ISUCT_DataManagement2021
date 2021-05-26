@@ -30,7 +30,7 @@ namespace Rent
             dataGridClient.ItemsSource = ProcessFactory.GetClientProsess().getList();
         }
 
- 
+
         private void BTADD_Click_1(object sender, RoutedEventArgs e)
         {
             AddClient wnd = new AddClient();
@@ -78,6 +78,25 @@ namespace Rent
         private void btclose(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void SearchClient_Click(object sender, RoutedEventArgs e)
+        {
+            SearchWind search = new SearchWind("Client");
+            {
+
+                search.ShowDialog();
+                if (search.exec)
+                {
+                    this.dataGridClient.ItemsSource = search.FoundClients;
+                }
+
+            }
+        }
+
+        private void reset_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateWND();
         }
     }
 }

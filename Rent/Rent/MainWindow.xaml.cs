@@ -64,5 +64,6 @@ namespace Rent
             StoredProc wnd = new StoredProc();
             wnd.ShowDialog();
         }
+
     }
 }

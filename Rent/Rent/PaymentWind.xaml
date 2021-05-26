@@ -21,7 +21,6 @@
         <DataGrid x:Name="dataGridPayment" Margin="0,0,0,0" Grid.ColumnSpan="5" Grid.Row="1"/>
         <Button x:Name="btadd" Content="ДОБАВИТЬ ПЛАТЕЖ" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btadd_Click" Grid.ColumnSpan="1" VerticalContentAlignment="Center"/>
         <Button x:Name="btupd" Content="ИЗМЕНИТЬ ДАННЫЕ" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btupd_Click" Grid.Column="1" VerticalContentAlignment="Center"/>
-        <Button x:Name="btdel" Content="УДАЛИТЬ ПЛАТЁЖ" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btdel_Click" Grid.Column="2" VerticalContentAlignment="Center"/>
         <Button x:Name="btcls" Content="НАЗАД" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btcls_Click" Grid.Column="4" VerticalContentAlignment="Center"/>
 
     </Grid>

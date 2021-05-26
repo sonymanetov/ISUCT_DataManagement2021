@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Rent"
         mc:Ignorable="d"
         Title="AddAgreement" Height="450" Width="800">
-    <Grid x:Name="btclose" Background="#FF1C1C1C">
+    <Grid x:Name="btclose" Background="#FF1A1A1A">
         <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="458" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Margin="211,0,0,0"/>
         <Button x:Name="btsave" Content="СОХРАНИТЬ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" Margin="0,1,0,0" VerticalAlignment="Top" Height="30" Width="211" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btsave_Click"/>
         <Button Content="НАЗАД" HorizontalAlignment="Left" Margin="669,0,0,0" VerticalAlignment="Top" Height="31" Width="131" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
@@ -20,8 +20,7 @@
         <TextBox x:Name="tbstart" HorizontalAlignment="Left" Margin="455,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
         <TextBox x:Name="tbfinish" HorizontalAlignment="Left" Margin="455,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
         <TextBox x:Name="tbday" HorizontalAlignment="Left" Margin="455,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="32" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
-        <ComboBox x:Name="cbclient" HorizontalAlignment="Left" Margin="455,83,0,0" VerticalAlignment="Top" Width="183" Height="33" Background="#FFAEA9A9" SelectionChanged="cbclient_SelectionChanged"/>
-        <TextBox x:Name="tbclient" HorizontalAlignment="Left" Margin="487,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbclient" HorizontalAlignment="Left" Margin="455,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="30"/>
 
     </Grid>
 </Window>

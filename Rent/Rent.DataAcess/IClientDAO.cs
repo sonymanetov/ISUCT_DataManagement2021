@@ -14,5 +14,7 @@ namespace Rent.DataAcess.Entities
         void delete(int ID);
 
         IList<Client> getList();
+
+        IList<Client> SearchClient(string Name, string Bank, string Agent);
     }
 }
