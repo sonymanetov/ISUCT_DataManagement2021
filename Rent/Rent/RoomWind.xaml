@@ -10,8 +10,9 @@
         <DataGrid x:Name="dataGridRoom" Margin="0,31,0,0"/>
         <Button x:Name="btupdroom" Content="ВНЕСТИ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" Margin="211,0,0,0" VerticalAlignment="Top" Height="31" Width="189" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="btupdroom_Click"/>
         <Button x:Name="btclose" Content="В МЕНЮ" HorizontalAlignment="Left" Margin="649,0,0,0" VerticalAlignment="Top" Height="31" Width="151" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btclose_Click"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top" Height="31" Width="249" Foreground="White" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6"/>
         <Button x:Name="addroombt" Content="ДОБАВИТЬ ПОМЕЩЕНИЕ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31" Width="211" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontSize="16" FontFamily="Century Gothic" Click="addroombt_Click"/>
+        <Button Content="ПОИСК" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top" Height="31" Width="127" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="Button_Click"/>
+        <Button x:Name="reset" Content="СБРОС" HorizontalAlignment="Left" Margin="527,0,0,0" VerticalAlignment="Top" Height="31" Width="122" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16" Click="reset_Click"/>
 
     </Grid>
 </Window>

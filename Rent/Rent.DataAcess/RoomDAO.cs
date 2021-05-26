@@ -131,5 +131,29 @@ namespace Rent.DataAcess
 
             return room;
         }
+        public IList<Room> SearchRoom(int RoomID, decimal Area, decimal Cost1, decimal Cost2)
+        {
+            IList<Room> rooms = new List<Room>();
+            using (var conn = GetConnection())
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM RentPremise WHERE (RoomID = @RoomID) OR (Area = @Area) OR (RentCostPerDay BETWEEN @Cost1 AND @Cost2)";
+                    cmd.Parameters.AddWithValue("@RoomID", RoomID);
+                    cmd.Parameters.AddWithValue("@Area", Area );
+                    cmd.Parameters.AddWithValue("@Cost1", Cost1 );
+                    cmd.Parameters.AddWithValue("@Cost2", Cost2);
+                    using (var dataReader = cmd.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            rooms.Add(CreateRoom(dataReader));
+                        }
+                    }
+                }
+            }
+            return rooms;
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace RentBusinessLayer
         void Delete(int ID);
 
         IList<RoomDto> getList();
+        IList<RoomDto> SearchRoom(int RoomID, decimal Area, decimal Cost1, decimal Cost2);
 
     }
 }

@@ -37,5 +37,9 @@ namespace RentBusinessLayer
         {
             return DtoConverter.Convert(roomDao.getList());
         }
+        public IList<RoomDto> SearchRoom(int RoomID, decimal Area, decimal Cost1, decimal Cost2)
+        {
+            return DtoConverter.Convert(roomDao.SearchRoom(RoomID, Area, Cost1, Cost2));
+        }
     }
 }

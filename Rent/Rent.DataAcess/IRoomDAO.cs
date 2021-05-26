@@ -13,5 +13,6 @@ namespace Rent.DataAcess
         public void Delete(int ID);
 
         IList<Room> getList();
+        IList<Room> SearchRoom(int RoomID, decimal Area, decimal Cost1, decimal Cost2);
     }
 }

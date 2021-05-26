@@ -74,5 +74,24 @@ namespace Rent
             wnd.ShowDialog();
             UpdateWND();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SearchWind search = new SearchWind("Room");
+            {
+
+                search.ShowDialog();
+                if (search.exec)
+                {
+                    this.dataGridRoom.ItemsSource = search.FoundRooms;
+                }
+
+            }
+        }
+
+        private void reset_Click(object sender, RoutedEventArgs e)
+        {
+                UpdateWND();
+        }
     }
 }

@@ -39,15 +39,12 @@ namespace Rent
                     break;
             }
         }
-        //выход
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
 
         private readonly IList<ClientDto> AllowClients = ProcessFactory.GetClientProsess().getList();
         public IList<ClientDto> FoundClients;
         public bool exec;
+        private readonly IList<RoomDto> AllowRooms = ProcessFactory.GetRoomProcess().getList();
+        public IList<RoomDto> FoundRooms;
 
         private void sclient_Click(object sender, RoutedEventArgs e)
         {
@@ -56,5 +53,27 @@ namespace Rent
             this.Close();
 
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cancbt_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void roomback_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void sroom_Click(object sender, RoutedEventArgs e)
+        {
+            this.FoundRooms = ProcessFactory.GetRoomProcess().SearchRoom(Convert.ToInt32(tbnumber.Text), Convert.ToDecimal(pl1.Text), Convert.ToDecimal(price1.Text), Convert.ToDecimal(price2.Text));
+            this.exec = true;
+            this.Close();
+        }
+
     }
 }
