@@ -16,11 +16,12 @@
         <Label Content="Дата заключения договора" HorizontalAlignment="Left" Margin="103,0,0,0" VerticalAlignment="Center" Foreground="White" FontSize="24"/>
         <Label Content="Дата окончания действия договора" HorizontalAlignment="Left" Margin="74,268,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
         <Label Content="День внесения платежей" HorizontalAlignment="Left" Margin="125,326,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
-        <TextBox x:Name="tbclient" HorizontalAlignment="Left" Margin="455,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="30" Background="#FFAEA9A9" FontFamily="Century Gothic" FontSize="16"/>
-        <TextBox x:Name="tbroom" HorizontalAlignment="Left" Margin="455,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="30" Background="#FFAEA9A9" FontFamily="Century Gothic" FontSize="16"/>
-        <TextBox x:Name="tbstart" HorizontalAlignment="Left" Margin="455,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFAEA9A9" FontFamily="Century Gothic" FontSize="16"/>
-        <TextBox x:Name="tbfinish" HorizontalAlignment="Left" Margin="455,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFAEA9A9" FontFamily="Century Gothic" FontSize="16"/>
-        <TextBox x:Name="tbday" HorizontalAlignment="Left" Margin="456,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="32" Background="#FFAEA9A9" FontFamily="Century Gothic" FontSize="16"/>
+        <TextBox x:Name="tbroom" HorizontalAlignment="Left" Margin="455,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="30" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
+        <TextBox x:Name="tbstart" HorizontalAlignment="Left" Margin="455,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
+        <TextBox x:Name="tbfinish" HorizontalAlignment="Left" Margin="455,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="31" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
+        <TextBox x:Name="tbday" HorizontalAlignment="Left" Margin="455,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="32" Background="#FFEBEBEB" FontFamily="Century Gothic" FontSize="16"/>
+        <ComboBox x:Name="cbclient" HorizontalAlignment="Left" Margin="455,83,0,0" VerticalAlignment="Top" Width="183" Height="33" Background="#FFAEA9A9" SelectionChanged="cbclient_SelectionChanged"/>
+        <TextBox x:Name="tbclient" HorizontalAlignment="Left" Margin="487,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

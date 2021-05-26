@@ -14,9 +14,8 @@
         </DataGrid>
         <Button x:Name="BTUPD" Content="ВНЕСТИ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" Margin="175,1,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" Height="31" Width="182" BorderBrush="White" FontSize="16" FontFamily="Century Gothic" Click="BTUPD_Click"/>
         <Button x:Name="BTADD" Content="ДОБАВИТЬ КЛИЕНТА" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" FontSize="16" Height="31" Width="174" BorderBrush="White" Margin="1,1,0,0" Click="BTADD_Click_1"/>
-        <Button x:Name="BTDEL" Content="УДАЛИТЬ КЛИЕНТА" HorizontalAlignment="Left" Margin="357,1,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" BorderBrush="White" Height="31" Width="165" FontSize="16" FontFamily="Century Gothic" Click="btdel"/>
         <Button Content="ЗАКРЫТЬ" HorizontalAlignment="Left" Margin="667,1,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" Height="31" Width="168" BorderBrush="White" FontFamily="Century Gothic" FontSize="16" Click="btclose"/>
-        <Button Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="522,1,0,0" VerticalAlignment="Top" Height="31" Width="145" Background="#FF7E1EA6" BorderBrush="White"/>
+        <Button Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="357,1,0,0" VerticalAlignment="Top" Height="31" Width="310" Background="#FF7E1EA6" BorderBrush="White"/>
 
     </Grid>
 </Window>
