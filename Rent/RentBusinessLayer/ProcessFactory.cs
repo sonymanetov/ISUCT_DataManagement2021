@@ -27,5 +27,9 @@ namespace RentBusinessLayer
         {
             return new HPProcess();
         }
+        public static IReportGenerator GetReport()
+        {
+            return new ReportGenerator();
+        }
     }
 }

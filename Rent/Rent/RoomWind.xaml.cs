@@ -11,6 +11,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using RentBusinessLayer;
 using Rent_Dto;
+using System.Linq;
+using Microsoft.Win32;
+using System.IO;
 
 namespace Rent
 {
@@ -92,6 +95,27 @@ namespace Rent
         private void reset_Click(object sender, RoutedEventArgs e)
         {
                 UpdateWND();
+        }
+
+        private void ExcelExportButton_Click(object sender, RoutedEventArgs e)
+        {
+            List<object> grid = null;
+            grid = this.dataGridRoom.ItemsSource.Cast<object>().ToList();
+
+            SaveFileDialog saveXlsxDialog = new SaveFileDialog
+            {
+                DefaultExt = ".xlsx",
+                Filter = "Excel Files(.xlsx)|*.xlsx",
+                AddExtension = true,
+                FileName = "Room",
+            };
+
+            bool? result = saveXlsxDialog.ShowDialog();
+            if (result == true)
+            {
+                FileInfo xlsxFile = new FileInfo(saveXlsxDialog.FileName);
+                ProcessFactory.GetReport().fillExcelTableByType(grid, "Room", xlsxFile);
+            }
         }
     }
 }

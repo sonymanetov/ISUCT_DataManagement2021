@@ -23,9 +23,9 @@ namespace Rent
     {
         public MainWindow()
         {
-           //var b =  new SqlConnection(); 
+            //var b =  new SqlConnection(); 
             InitializeComponent();
-           
+
             datetext.Text = DateTime.Now.ToShortDateString();
         }
 

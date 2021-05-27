@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rent"
         mc:Ignorable="d"
-        Title="ClientWind" Height="457" Width="836">
+        Title="ClientWind" Height="457" Width="836" ResizeMode="NoResize" SizeToContent="Manual" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF252424">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
         <DataGrid x:Name="dataGridClient" Margin="0,32,0,10" Background="#FF1D1D1D" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Century Gothic">
             <DataGrid.CellStyle>
                 <Style/>
@@ -14,9 +17,10 @@
         </DataGrid>
         <Button x:Name="BTUPD" Content="ВНЕСТИ ИЗМЕНЕНИЯ" HorizontalAlignment="Left" Margin="175,0,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" Height="32" Width="182" BorderBrush="#FF7E1EA6" FontSize="16" FontFamily="Century Gothic" Click="BTUPD_Click"/>
         <Button x:Name="BTADD" Content="ДОБАВИТЬ КЛИЕНТА" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" FontSize="16" Height="32" Width="174" BorderBrush="#FF7E1EA6" Margin="1,0,0,0" Click="BTADD_Click_1"/>
-        <Button Content="ЗАКРЫТЬ" HorizontalAlignment="Left" Margin="667,1,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" Height="31" Width="168" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btclose"/>
-        <Button x:Name="SearchClient" Content="ПОИСК" HorizontalAlignment="Left" Margin="357,0,0,0" VerticalAlignment="Top" Click="SearchClient_Click" Height="32" Width="151" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Foreground="White"/>
-        <Button x:Name="reset" Content="СБРОС" HorizontalAlignment="Left" Margin="508,0,0,0" VerticalAlignment="Top" Click="reset_Click" Height="32" Width="159" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" FontSize="16" FontFamily="Century Gothic" Foreground="White"/>
+        <Button Content="ЗАКРЫТЬ" HorizontalAlignment="Left" Margin="719,0,0,0" VerticalAlignment="Top" Background="#FF7E1EA6" Foreground="White" Height="31" Width="116" BorderBrush="#FF7E1EA6" FontFamily="Century Gothic" FontSize="16" Click="btclose"/>
+        <Button x:Name="reset" Content="СБРОС" HorizontalAlignment="Left" Margin="477,0,0,0" VerticalAlignment="Top" Click="reset_Click" Height="32" Width="129" BorderBrush="#FF7E1EA6" Background="#FF7E1EA6" FontSize="16" FontFamily="Century Gothic" Foreground="White"/>
+        <Button x:Name="ExcelExporterButton" Content="ОТЧЕТ" HorizontalAlignment="Left" Margin="606,0,0,0" VerticalAlignment="Top" Height="32" Width="113" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontSize="16" FontFamily="Century Gothic" Click="ExcelExporterButton_Click"/>
+        <Button x:Name="search" Content="ПОИСК" HorizontalAlignment="Left" Margin="357,0,0,0" VerticalAlignment="Top" Height="32" Width="120" Click="search_Click" Background="#FF7E1EA6" BorderBrush="#FF7E1EA6" Foreground="White" FontFamily="Century Gothic" FontSize="16"/>
 
     </Grid>
 </Window>
